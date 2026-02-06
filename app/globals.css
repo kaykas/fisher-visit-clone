@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fisher-dark: #1a1a1a;
+  --color-fisher-gold: #c5a572;
+  --color-fisher-gray: #f5f5f0;
+  --color-fisher-border: #d4d4d4;
+  --font-sans: "mrs-eaves-xl-serif", "Georgia", serif;
+  --font-mono: "Inconsolata", monospace;
+}
+
+/* Base typography - Fisher uses mrs-eaves from Typekit as primary */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-fisher-dark);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Form elements use Inconsolata */
+input, select, textarea, label, .form-label {
+  font-family: var(--font-mono);
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-fisher-border);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  background: white;
+  color: var(--color-fisher-dark);
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-fisher-gold);
+}
+
+.form-input::placeholder {
+  color: #999;
+}
