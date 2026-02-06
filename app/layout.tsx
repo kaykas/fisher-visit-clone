@@ -36,6 +36,8 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased text-fisher-dark bg-white">
         {children}
+        {/* VM TrueTour Popup Script */}
+        <script src="https://truetour.app/embed/popup.js" defer />
       </body>
     </html>
   );
